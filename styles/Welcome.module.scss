@@ -1,0 +1,103 @@
+.welcomeContainer{
+	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: white;
+    top: 9vh;
+
+}
+
+.welcomeTextConatiner{
+	
+	color: black;
+	margin-left: 5em;
+    z-index: 1;
+    text-align: center;
+}
+.steth{
+	position: absolute;
+	left: 10em;
+	top: 6em;
+	
+	height: 7em;
+}
+.welcomeTextTitle {
+	margin: 0;
+	font-size: 3.5em;
+	font-weight: 800;
+	line-height: 1.15;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(   rgb(24, 7, 179) 27.3%, red 82.7% );
+}
+.globebox{
+	position: relative;
+}
+.globe{
+	height: 0.6em;
+	-ms-transform: rotate(-20deg); /* IE 9 */
+	  transform: rotate(-20deg);
+	  
+}
+.globering{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0.35em;
+}
+.welcomeTextSubTitle {
+	margin: 0;
+	font-size: 2em;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(   rgb(24, 7, 179) 27.3%, red 82.7% );
+}
+.welcomeTextInfo {
+	margin: 0;
+	font-size: 1.2em;
+	color: #000;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(   rgb(24, 7, 179) 27.3%, rgb(241, 0, 0) 112.7% );
+}
+
+.texthighlight{
+	font-size: 1.4em;
+	font-weight: bold;
+}
+.welcomeTextLogo {
+	height: 5em;
+}
+
+.navbtn {
+	transition: all 0.3s ease-in-out;
+	color: blueviolet;
+	background-color: #fff;
+	padding: 7px 15px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	margin: 10px;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	&:hover {
+		transform: translatey(3px);
+		font-weight: 500;
+		box-shadow: none;
+		background-image: linear-gradient(90deg, #4776e6 0, #8e54e9 95%, #4776e6);
+		color: #fff;
+	}
+}
+.welcomeImageConatiner {
+	text-align: center;
+}
+.welcomeImage {
+	height: 17em;
+	left: 0;
+}

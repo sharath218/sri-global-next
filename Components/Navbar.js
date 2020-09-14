@@ -35,7 +35,7 @@ const Navbar = () => {
 					<a href="/#reviews">REVIEWS</a>
 				</button>
 				<button className={styles.conatctbtn}>
-					<span>Contact Us</span>
+					<a href="/#information">Contact Us</a>
 				</button>
 			</nav>
 

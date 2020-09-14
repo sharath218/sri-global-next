@@ -3,13 +3,13 @@ import styles from "../styles/Services.module.scss";
 
 const Services = () => {
 	return (
-		<div className={styles.serviceContainer}>
-			<div className={styles.titlebox}>
+		<div id="services" className={styles.serviceContainer}>
+			<div  className={styles.titlebox}>
 				<h1 className={styles.title}>
 				OUR	SERVICES<span className={styles.span}></span>
 				</h1>
 			</div>
-			<div className={styles.cardsbox}>
+			<div  className={styles.cardsbox}>
 				<div className={styles.card}>
                 <img
                       className={styles.cardImg}

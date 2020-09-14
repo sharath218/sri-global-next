@@ -16,8 +16,8 @@ const Information = () => {
       });
     return (
         <div>
-            <h1 className={styles.title}>WE ARE HERE</h1>
-            <div className={styles.infoContainer}>
+            <h1 id="information" className={styles.title}>WE ARE HERE</h1>
+            <div  className={styles.infoContainer}>
             
             <div className={styles.mapBox}>
             <ReactMapGL

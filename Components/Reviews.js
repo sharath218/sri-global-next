@@ -38,9 +38,9 @@ const Reviews = () => {
 		]
 	  };
   return (
-    <div className={styles.reviewContainer}>
+    <div id="reviews" className={styles.reviewContainer}>
       <div className={styles.titlebox}>
-        <h1 className={styles.title}>
+        <h1  className={styles.title}>
           REVIEWS<span className={styles.span}></span>
         </h1>
       </div>

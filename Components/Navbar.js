@@ -28,15 +28,15 @@ const Navbar = () => {
 			</div>
 
 			<nav className={ !ham ? styles.navLinks : styles.slide }>
-				<button className={styles.navbtn}>
-					<a href="/#services">SERVICES</a>
-				</button>
-				<button className={styles.navbtn}>
-					<a href="/#reviews">REVIEWS</a>
-				</button>
-				<button className={styles.conatctbtn}>
-					<a href="/#information">Contact Us</a>
-				</button>
+				
+					<a href="/#services"><button className={styles.navbtn}>SERVICES</button></a>
+				
+				
+					<a href="/#reviews"><button className={styles.navbtn}>REVIEWS</button></a>
+				
+				
+					<a href="/#information"><button className={styles.conatctbtn}>Contact Us</button></a>
+				
 			</nav>
 
 			<div className={styles.menu} onClick={()=>{setham(!ham)}}>

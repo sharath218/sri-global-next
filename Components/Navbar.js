@@ -31,7 +31,7 @@ const Navbar = () => {
 				
 					<a href="/#services"><button className={styles.navbtn}>SERVICES</button></a>
 					<a href="/#reviews"><button className={styles.navbtn}>REVIEWS</button></a>
-					<a href="/#information"><button className={styles.conatctbtn}>INFORMATION</button></a>
+					<a href="/#information"><button className={styles.conatctbtn}>CONTACT US</button></a>
 				
 				
 		</nav>

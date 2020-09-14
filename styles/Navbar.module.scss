@@ -1,8 +1,9 @@
 .navContainer {
 	position: fixed;
 	height: 9vh;
+	width: 100%;
     background-color: white;
-    box-shadow: 0 2px 59px -18px rgb(154, 191, 243);
+	box-shadow: 0 10px 15px -3px rgba(148, 213, 229, 0.1), 0 4px 6px -2px rgba(185, 224, 236, 0.459);
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
@@ -29,7 +30,8 @@
 .logoContainer{
 
     display: flex;
-    height: 100%;
+	height: 100%;
+	font-size: 1em;
     align-items: center;
     .navLogoImage{
         height: 80%;
@@ -40,8 +42,8 @@
         padding: 5px 5px;        
 		letter-spacing: 1px;
 		-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-image: linear-gradient(   rgb(24, 7, 179) 27.3%, rgb(241, 0, 0) 112.7% );
+		-webkit-text-fill-color: transparent;
+		background-image: linear-gradient(rgb(24, 7, 179) 27.3%, red 82.7% );
     }
 }
 
@@ -144,7 +146,7 @@
 
 .slide{
 	position: absolute;
-	top: 7vh;
+	top: 9vh;
 	width: 100%;
 	height: 70vh;
 	z-index: 1000;
@@ -168,11 +170,22 @@
 	.navLinks{
 		position: absolute;
 		background-color: #fff;
-		top: 7vh;
+		top: 9vh;
 		height: 0;
 		transition: all 0.3s ease-in;
 		opacity: 0;
 		flex-direction: column;
 		width: 100%;
+	}
+	.navContainer{
+		justify-content: space-around;
+	}
+	.logoContainer{
+		display: flex;
+		justify-content: center;
+		font-size: 0.7em;
+		
+		
+		width: 60%;
 	}
 }

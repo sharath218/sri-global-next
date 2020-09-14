@@ -40,9 +40,9 @@ const Navbar = () => {
 			</nav>
 
 			<div className={styles.menu} onClick={()=>{setham(!ham)}}>
-            <div className={ham ? styles.rect1 : styles.flip1}></div>
-            <div className={ham ? styles.rect2 : styles.flip2}></div>
-            <div className={ham ? styles.rect3 : styles.flip3}></div>
+            <div className={!ham ? styles.rect1 : styles.flip1}></div>
+            <div className={!ham ? styles.rect2 : styles.flip2}></div>
+            <div className={!ham ? styles.rect3 : styles.flip3}></div>
           </div>
 		</div>
 	);

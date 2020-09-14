@@ -8,10 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "firebase": "^7.20.0",
     "formik": "^2.1.5",
     "next": "9.5.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-map-gl": "^5.2.8",
     "react-modal": "^3.11.2",
     "react-scroll-parallax": "^2.3.4",
     "react-slick": "^0.27.10",

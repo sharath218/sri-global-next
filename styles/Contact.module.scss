@@ -1,0 +1,148 @@
+.contContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+.title{
+    margin: 0 0;
+    padding: 0 0;
+    font-size: 1.7em;
+    margin: auto;
+    color: #6628d1;
+}
+.formlabel{
+    margin: 0 0;
+    font-size: 0.8em;
+    margin-top: 0.4em;
+    color: #27065f;
+}
+.input{
+    border: none;
+    border-bottom: 0.135em solid #9968ec;
+    border-radius: 0px;
+    width: 100%;
+	  padding: 5px 10px;
+	  background-color: transparent;
+    outline: none;
+    margin-top: -0.2em;
+
+}
+
+.errormsg{
+    color: #e95530;
+	margin: 0;
+    padding: 0;
+    font-size: 0.6em;
+}
+
+.submitbtn{
+    width: 200px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	cursor: pointer;
+  margin: auto;
+  margin-top: 1em;
+
+	height: 2em;
+	text-align: center;
+	border: none;
+	background-size: 300% 100%;
+	border-radius: 50px;
+	background-image: linear-gradient(90deg, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    
+    &:hover{
+        moz-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        background-position: 100% 0;
+    }
+}
+
+.submitting{
+    width: 200px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 1em;
+	height: 2em;
+	text-align: center;
+	border: none;
+	background-size: 300% 100%;
+	border-radius: 50px;
+    background-color: darkgray;
+    
+}
+
+.successgif{
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #9968ec;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}

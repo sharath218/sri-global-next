@@ -3,6 +3,8 @@
 	flex-direction: column;
 	min-height: 80vh;
 	align-items: center;
+	width: 100%;
+	
 }
 
 .titlebox {
@@ -11,15 +13,17 @@
 }
 
 .title {
-	display: flex;
-	align-items: center;
-	padding: 0 6px;
 	
+	padding: 0 6px;
 	margin-left: 15%;
 	font-size: 2.5em;
+	color: black;
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-image: linear-gradient(   rgb(24, 7, 179) 27.3%, rgb(255, 0, 0) 82.7%);
+	background-color: linear-gradient(   rgb(24, 7, 179) 27.3%, rgb(255, 0, 0) 82.7%) ;
+	overflow: hidden;
 }
 
 .title::after {
@@ -113,4 +117,43 @@
 }
 .cardDesc {
 	font-size: 0.7em;
+}
+@media only screen and (max-width: 1045px){
+	.serviceContainer{
+		text-align: center;
+		align-items: center;
+	}
+	.title{
+		margin-left: 0%;
+		font-size: 1.8em;
+	}
+	.title::after{
+		display: none;
+	}
+	.cardsbox{
+		padding: 2em 1.4em;
+		width: 94%;
+		grid-template-columns: repeat(
+		auto-fill,
+		minmax(8em, 1fr)
+		); 
+		grid-gap: 0.7em;
+	}
+	.card{
+		width: 8em;
+		height: 8em;
+	}
+	.cardImg{
+		height: 8em;
+		width: 8em;
+	}
+	.cardInfo{
+		height: 2.5em;
+	}
+	.cardTitle{
+		font-size: 0.7em;
+	}
+	.cardDesc{
+		font-size: 0.6em;
+	}
 }

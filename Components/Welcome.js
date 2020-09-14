@@ -33,13 +33,32 @@ const Welcome = () => {
 				<p className={styles.welcomeTextInfo}>
 					stay in the<span className={styles.texthighlight}> Comfort </span>&amp;<span className={styles.texthighlight}> Safety </span> of your own home
 				</p>
+				<div className={styles.callbtnbox}>
+				<a href="tel:9494129299">
 				<button className={styles.navbtn}>
-					<a >+91 1234567890</a>
+					+91 1234567890
 				</button>
+				</a>
+				<a href="tel:9494129299">
 				<button className={styles.navbtn}>
-					<a >+91 1234567890</a>
+					+91 1234567890
+				</button>
+				</a>
+				</div>
+				{/* <a href="https://api.whatsapp.com/send?phone=+919494129299">Send Message</a> */}
+				<button className={styles.whatsApp}>
+					<a href="https://wa.me/+919494129299">
+					
+				<img
+					className={styles.whatsAppimage}
+					src="/img/whatsapp.png"
+					alt="image1"
+					
+					/>
+					</a>
 				</button>
 			</div>
+				
 			<div className={styles.welcomeImageConatiner}>
 				<img
 					className={styles.welcomeImage}

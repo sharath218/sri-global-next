@@ -15,7 +15,7 @@ const Information = () => {
     
       });
     return (
-        <div>
+        <div id="information">
             <h1 className={styles.title}>WE ARE HERE</h1>
             <div className={styles.infoContainer}>
             

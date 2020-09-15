@@ -1,12 +1,19 @@
+	.welcomeBox{
+		width: 100%;
+		display: flex;
+    	justify-content: center;
+   		align-items: center;
+		top: 11vh;
+	}
+
 .welcomeContainer{
-	
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
-    background-color: white;
+    min-height: 70vh;
+    background-color: inherit;
     top: 10vh;
-	width: 100%;
+	width: 98%;
 }
 
 .welcomeTextConatiner{
@@ -16,12 +23,17 @@
     z-index: 1;
 	text-align: center;
 	
+	
 }
 .steth{
 	position: absolute;
 	left: 10em;
 	top: 6em;
 	height: 7em;
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	
+	
 }
 .welcomeTextTitle {
 	margin: 0;
@@ -31,6 +43,10 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-image: linear-gradient(   rgb(24, 7, 179) 27.3%, red 82.7% );
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	
+	
 }
 .globebox{
 	position: relative;
@@ -39,6 +55,8 @@
 	height: 0.6em;
 	-ms-transform: rotate(-20deg); /* IE 9 */
 	  transform: rotate(-20deg);
+	  
+	
 	  
 }
 .globering{
@@ -53,6 +71,9 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-image: linear-gradient(   rgb(24, 7, 179) 27.3%, red 82.7% );
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	
 }
 .welcomeTextInfo {
 	margin: 0;
@@ -61,15 +82,22 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-image: linear-gradient(   rgb(24, 7, 179) 27.3%, rgb(241, 0, 0) 112.7% );
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	
 }
 
 .texthighlight{
 	font-size: 1.4em;
 	font-weight: bold;
+	// -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	//         animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .welcomeTextLogo {
 	height: 4em;
 	margin-top: 2em;
+	-webkit-animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .navbtn {
@@ -94,12 +122,19 @@
 		background-image: linear-gradient(90deg, #4776e6 0, #8e54e9 95%, #4776e6);
 		color: #fff;
 	}
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	
 }
 .welcomeImageConatiner {
 	text-align: center;
+	margin-top: 100px;
+	-webkit-animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	
 }
 .welcomeImage {
-	height: 17em;
+	width: 28em;
 	left: 0;
 }
 .whatsApp{
@@ -116,18 +151,60 @@
 	color: white;
 	border-radius: 60%;
 	padding: 0 0;
-
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	
 	&:hover{
 		box-shadow: 2px 2px 3px #999;
 	}
+
 }
 .whatsAppimage{
 	display: grid;
 	place-items: center;
 	width: 4em;
 }
+@-webkit-keyframes slide-top {
+	0% {
+	  -webkit-transform: translateY(100);
+			  transform: translateY(100);
+	}
+	100% {
+	  -webkit-transform: translateY(0px);
+			  transform: translateY(0px);
+	}
+  }
+  @keyframes slide-top {
+	0% {
+	  -webkit-transform: translateY(100px);
+			  transform: translateY(100px);
+	}
+	100% {
+	  -webkit-transform: translateY(0px);
+			  transform: translateY(0px);
+	}
+  }
 
-
+  @-webkit-keyframes slide-left {
+	0% {
+	  -webkit-transform: translateX(100);
+			  transform: translateX(100);
+	}
+	100% {
+	  -webkit-transform: translateX(0px);
+			  transform: translateX(0px);
+	}
+  }
+  @keyframes slide-left {
+	0% {
+	  -webkit-transform: translateX(100px);
+			  transform: translateX(100px);
+	}
+	100% {
+	  -webkit-transform: translateX(0px);
+			  transform: translateX(0px);
+	}
+  }
 @media only screen and (max-width: 1045px){
 
 	.welcomeContainer{

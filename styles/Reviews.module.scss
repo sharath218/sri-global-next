@@ -37,11 +37,11 @@
 	
 	padding: 2em 2em;
 	
-	background: radial-gradient(circle, rgb(182, 219, 194) 0%, rgb(177, 235, 212) 100%);
+	background: radial-gradient(circle, #99f3bd 0%, #99f3bd 100%);
 }
 .reviewCard{
 	position: relative;
-	background-color: white;
+	background-color: #f1f3f8;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -50,6 +50,7 @@
 	margin-left: 3%;
 	flex-wrap: wrap;
 	min-height: 30vh;
+	border: 1px solid black;
 }
 
 .slider{

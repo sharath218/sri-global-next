@@ -1,20 +1,28 @@
 import React from "react";
 import styles from "../styles/Welcome.module.scss";
+import { Parallax } from "react-scroll-parallax";
+
 const Welcome = () => {
 	return (
-		<div className={styles.welcomeContainer}>
-			<div className={styles.welcomeTextConatiner}>
+		<div className={styles.welcomeBox}>
+				<div className={styles.welcomeContainer}>
+			<div>
 				<img
 					className={styles.steth}
 					src="/img/steth.png"
 					alt="image1"
 					/>
+				</div>
+			<div className={styles.welcomeTextConatiner}>
+				<Parallax y={[20,-20]}>	
 				<img
 					className={styles.welcomeTextLogo}
 					src="/img/sri-global-logo.svg"
 					alt="image1"
 				/>
-				<h1 className={styles.welcomeTextTitle}>
+				</Parallax>
+				<Parallax y={[30,-10]} >
+					<h1 className={styles.welcomeTextTitle}>
 					Sri Gl
 					<span className={styles.globebox}><img
 					className={styles.globe}
@@ -28,7 +36,8 @@ const Welcome = () => {
 					/>
 					</span>
 					bal
-				</h1>
+					</h1>
+				</Parallax>
 				<h3 className={styles.welcomeTextSubTitle}>Home Care Nursing Services</h3>
 				<p className={styles.welcomeTextInfo}>
 					stay in the<span className={styles.texthighlight}> Comfort </span>&amp;<span className={styles.texthighlight}> Safety </span> of your own home
@@ -58,7 +67,7 @@ const Welcome = () => {
 					</a>
 				</button>
 			</div>
-				
+			<Parallax y={[50,-50]}>	
 			<div className={styles.welcomeImageConatiner}>
 				<img
 					className={styles.welcomeImage}
@@ -66,6 +75,9 @@ const Welcome = () => {
 					alt="image1"
 				/>
 			</div>
+			</Parallax>
+		</div>
+	
 		</div>
 	);
 };

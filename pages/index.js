@@ -6,16 +6,17 @@ import Services from '../Components/Services'
 import Reviews from '../Components/Reviews'
 import Information from '../Components/Information'
 import Footer from '../Components/Footer'
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 export default function Home() {
   return (
-    <div>
+    <ParallaxProvider>
       <Navbar/>
       <Welcome/>
       <Services/>
       <Reviews/>
       <Information/> 
        <Footer/>
-    </div>
+    </ParallaxProvider>
   )
 }

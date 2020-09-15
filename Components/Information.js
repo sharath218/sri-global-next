@@ -4,6 +4,7 @@ import ReactMapGL from 'react-map-gl'
 import styles from "../styles/Information.module.scss";
 import Contact from './Contact';
 import { Marker } from 'react-map-gl'
+import { Parallax } from "react-scroll-parallax";
 
 const Information = () => {
     const [viewport, setViewport] = useState({
@@ -15,14 +16,16 @@ const Information = () => {
     
       });
     return (
-        <div>
+        <Parallax y={[10, -10]}>
+                <Parallax y={[100, -10]}>
             <h1 id="information" className={styles.title}>WE ARE HERE</h1>
+            </Parallax>
             <div  className={styles.infoContainer}>
             
             <div className={styles.mapBox}>
             <ReactMapGL
                 {...viewport}
-                mapboxApiAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
+               // mapboxApiAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
                 className={styles.mapBox}
                 onViewportChange={viewport => {
                 setViewport(viewport);
@@ -37,7 +40,7 @@ const Information = () => {
             </Marker>
                 </ReactMapGL>
             </div>
-            <div className={styles.addressBox}>
+            <Parallax y={[15, -10]} className={styles.addressBox}>
                 <h3 className={styles.addtitle}>Address</h3>
                 <h5 className={styles.addinfotitle}> Sri Global Home Care Services </h5>    
               <p className={styles.addinfo}>No.3-3-173 and 173/1, Chappal Bazar, Kachiguda, Hyderabad - 500027, 
@@ -63,12 +66,12 @@ const Information = () => {
 					/>
 					</a>
 				</button>
-            </div>
-            <div className={styles.conatctBox}>
+            </Parallax>
+            <Parallax y={[15, -10]} className={styles.conatctBox}>
                 <Contact/>
-            </div>
+            </Parallax>
         </div>
-        </div>
+        </Parallax>
     )
 }
 

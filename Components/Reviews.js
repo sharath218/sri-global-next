@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../styles/Reviews.module.scss";
 import Slider from "react-slick";
+import { Parallax } from "react-scroll-parallax";
+
 const Reviews = () => {
 	const settings = {
 		
@@ -39,11 +41,11 @@ const Reviews = () => {
 	  };
   return (
     <div id="reviews" className={styles.reviewContainer}>
-      <div className={styles.titlebox}>
+      <Parallax y={[100, -10]} className={styles.titlebox}>
         <h1  className={styles.title}>
           REVIEWS<span className={styles.span}></span>
         </h1>
-      </div>
+      </Parallax>
       <div className={styles.reviewbox} >
         <Slider {...settings}  >
           <div className={styles.reviewCard}>

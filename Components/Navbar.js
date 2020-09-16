@@ -29,13 +29,13 @@ const Navbar = () => {
 
 			<nav className={ !ham ? styles.navLinks : styles.slide }>
 				
-					<a href="/#services"><button onClick={()=>{setham(!ham)}} className={styles.navbtn}>SERVICES</button></a>
+					<a href="/#services"><button onClick={()=>{setham(false)}} className={styles.navbtn}>SERVICES</button></a>
 				
 				
-					<a href="/#reviews"><button onClick={()=>{setham(!ham)}} className={styles.navbtn}>REVIEWS</button></a>
+					<a href="/#reviews"><button onClick={()=>{setham(false)}} className={styles.navbtn}>REVIEWS</button></a>
 				
 				
-					<a href="/#information"><button onClick={()=>{setham(!ham)}} className={styles.conatctbtn}>Contact Us</button></a>
+					<a href="/#information"><button onClick={()=>{setham(false)}} className={styles.conatctbtn}>Contact Us</button></a>
 				
 			</nav>
 

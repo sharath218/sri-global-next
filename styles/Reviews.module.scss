@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: center;
 	width: 100%;
+	z-index: 1;
+	overflow: hidden;
 }
 
 .titlebox {
@@ -38,6 +40,9 @@
 	padding: 2em 2em;
 	
 	background: radial-gradient(circle, #99f3bd 0%, #99f3bd 100%);
+	background: url(../public/img/Large-Triangles.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .reviewCard{
 	position: relative;
@@ -50,7 +55,7 @@
 	margin-left: 3%;
 	flex-wrap: wrap;
 	min-height: 30vh;
-	border: 1px solid black;
+	border: 1px solid white;
 }
 
 .slider{

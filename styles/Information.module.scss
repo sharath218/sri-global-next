@@ -1,4 +1,6 @@
 .infoContainer{
+    position: relative;
+    height: 100%;
     min-height: 70vh;
     width: 100%;
    // background-image: linear-gradient( 111.6deg,  rgba(174,68,223,1) 27.3%, rgba(246,135,135,1) 112.7% );
@@ -7,7 +9,9 @@
     align-items: center;
     flex-direction: row;
     padding-bottom: 2em;
-    overflow: hidden;
+    background-color: transparent;
+    
+    
 }
 .title {
 	
@@ -43,6 +47,9 @@
     padding: 1em 1em;
     align-items: center;
     text-align: center;
+    background: url(../public/img/Flat-Mountains.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .addtitle{
     margin: 0 0;
@@ -65,7 +72,8 @@
     padding: 0em 0em;
     width: 18em;
     height: 23em;
-    background-color: rgb(241, 240, 255);
+    background-color: rgb(248, 248, 250);
+    
 }
 
 
@@ -92,12 +100,16 @@
         background-position: 100% 0;
     }
 }
-
+.backImg{
+    position: absolute;
+    width: 100%;
+    
+    z-index: -1;
+}
 .whatsApp{
     
     
 	background-color: #25D366;
-	
 	cursor: pointer;
 	border: none;
 	outline: none;

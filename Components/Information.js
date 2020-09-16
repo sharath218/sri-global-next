@@ -21,7 +21,11 @@ const Information = () => {
             <h1 id="information" className={styles.title}>WE ARE HERE</h1>
             </Parallax>
             <div  className={styles.infoContainer}>
-            
+            {/* <img
+					className={styles.backImg}
+					src="/img/Flat-Mountains.svg"
+					alt="image1"
+				/> */}
             <div className={styles.mapBox}>
             <ReactMapGL
                 {...viewport}

@@ -13,7 +13,7 @@
     min-height: 70vh;
     background-color: inherit;
     top: 10vh;
-	width: 98%;
+	width: 100%;
 }
 
 .welcomeTextConatiner{
@@ -247,7 +247,8 @@
 		font-size: 1.2em;
 	}
 	.welcomeImage{
-		height: 10em;
+		width: 100vw;
+		margin-top: -7em;
 		
 	}
 	.callbtnbox{

@@ -17,9 +17,13 @@ const Information = () => {
       });
     return (
         <Parallax y={[10, -10]}>
-                <Parallax y={[100, -10]}>
-            <h1 id="information" className={styles.title}>WE ARE HERE</h1>
-            </Parallax>
+                
+
+            <Parallax y={[100, -10]} className={styles.titlebox}>
+				<h1 id="information" className={styles.title}>
+                WE ARE HERE
+				</h1>
+			</Parallax>
             <div  className={styles.infoContainer}>
             {/* <img
 					className={styles.backImg}

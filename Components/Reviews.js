@@ -42,10 +42,10 @@ const Reviews = () => {
   return (
     <div id="reviews" className={styles.reviewContainer}>
       <Parallax y={[100, -10]} className={styles.titlebox}>
-        <h1  className={styles.title}>
-          REVIEWS<span className={styles.span}></span>
-        </h1>
-      </Parallax>
+				<h1 className={styles.title}>
+					REVIEWS
+				</h1>
+			</Parallax>
       <div className={styles.reviewbox} >
         <Slider {...settings}  >
           <div className={styles.reviewCard}>

@@ -2,15 +2,14 @@
 	position: fixed;
 	height: 9vh;
 	width: 100%;
-	
-    background-color: white;
+    background-color: rgb(238, 238, 250);
 	box-shadow: 0 10px 15px -3px rgba(148, 213, 229, 0.1), 0 4px 6px -2px rgba(185, 224, 236, 0.459);
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
 	text-align: center;
 	align-items: center;
-	z-index: 10;
+	z-index: 11;
 }
 
 .globebox{
@@ -63,7 +62,7 @@
 	transition: all 0.3s ease-in-out;
 	color: #000;
 	background-color: #fff;
-	padding: 7px 30px;
+	padding: 6px 15px;
 	border-radius: 5px;
 	outline: none;
 	border: none;
@@ -86,7 +85,7 @@
 	transition: all 0.3s ease-in-out;
 	color: #000;
 	background-color: #fff;
-	padding: 7px 30px;
+	padding: 6px 15px;
 	border-radius: 5px;
 	outline: none;
 	border: none;
@@ -153,10 +152,7 @@
 	z-index: 1000;
 	overflow: hidden;
 	background-color: #fff;
-	display: -moz-box;
 	display: flex;
-	-moz-box-orient: vertical;
-	-moz-box-direction: normal;
 	flex-direction: column;
 	transition: height 0.5s ease-in;
 }
@@ -174,9 +170,13 @@
 		top: 9vh;
 		height: 0;
 		transition: all 0.3s ease-in;
-		opacity: 0;
+		opacity: 1;
 		flex-direction: column;
 		width: 100%;
+		.navbtn , .conatctbtn{
+			display: none;
+		}
+		
 	}
 	.navContainer{
 		justify-content: space-around;

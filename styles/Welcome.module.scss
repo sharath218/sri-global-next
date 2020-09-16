@@ -128,9 +128,12 @@
 }
 .welcomeImageConatiner {
 	text-align: center;
-	margin-top: 100px;
+	display: grid;
+	place-items: center;
+	margin-top: 4em;
 	-webkit-animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+			animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	background-color:white ;
 	
 }
 .welcomeImage {
@@ -248,7 +251,7 @@
 	}
 	.welcomeImage{
 		width: 90vw;
-		margin-top: -7em;
+		
 		
 	}
 	.callbtnbox{

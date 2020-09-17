@@ -4,7 +4,10 @@ import { Parallax } from "react-scroll-parallax";
 
 const Welcome = () => {
 	return (
+		<div >
+	
 		<div className={styles.welcomeBox}>
+				
 				<div className={styles.welcomeContainer}>
 			<div>
 				<img
@@ -76,9 +79,14 @@ const Welcome = () => {
 				/>
 			</div>
 			</Parallax>
+			
 		</div>
-	
+
+		
 		</div>
+		
+		</div>
+
 	);
 };
 

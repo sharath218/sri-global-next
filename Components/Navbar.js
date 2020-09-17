@@ -1,9 +1,25 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import styles from "../styles/Navbar.module.scss";
 const Navbar = () => {
 	const [ham, setham] = useState(false);
+	const [nav, setNav] = useState(false);
+
+	useEffect(function onFirstMount() {
+		const navbackground = () => {
+			if(window.scrollY >= 10 ){
+				setNav(true);
+			}else{
+				setNav(false);
+			}
+		}
+	
+		window.addEventListener("scroll", navbackground);
+	  }, []); 
+
+
+	
 	return (
-		<div className={styles.navContainer}>
+		<div  className={ nav ? styles.navContainertrans : styles.navContainer}>
 			<div className={styles.logoContainer}>
 				<img
 					className={styles.navLogoImage}

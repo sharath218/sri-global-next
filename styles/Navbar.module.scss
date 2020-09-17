@@ -2,7 +2,20 @@
 	position: fixed;
 	height: 9vh;
 	width: 100%;
-    background-color: rgb(238, 238, 250);
+    background-color: transparent;
+	//box-shadow: 0 10px 15px -3px rgba(148, 213, 229, 0.1), 0 4px 6px -2px rgba(185, 224, 236, 0.459);
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	z-index: 11;
+}
+.navContainertrans{
+	position: fixed;
+	height: 9vh;
+	width: 100%;
+    background-color: white;
 	box-shadow: 0 10px 15px -3px rgba(148, 213, 229, 0.1), 0 4px 6px -2px rgba(185, 224, 236, 0.459);
 	display: flex;
 	justify-content: space-around;
@@ -11,7 +24,6 @@
 	align-items: center;
 	z-index: 11;
 }
-
 .globebox{
 	position: relative;
 }

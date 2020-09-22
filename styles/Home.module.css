@@ -141,4 +141,7 @@
   .circles li:nth-child(1){
     left: 30%;
   }
+  .area{
+      height: 200%;
+  }
 }

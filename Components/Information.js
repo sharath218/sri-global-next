@@ -33,7 +33,7 @@ const Information = () => {
             <div className={styles.mapBox}>
             <ReactMapGL
                 {...viewport}
-                //mapboxApiAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
+                mapboxApiAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
                 className={styles.mapBox}
                 onViewportChange={viewport => {
                 setViewport(viewport);

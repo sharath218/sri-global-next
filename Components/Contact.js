@@ -125,7 +125,7 @@ const Contact = () => {
 						type="submit"
 						className={ !isValid || isSubmitting ? styles.submitting : styles.submitbtn}
 					>
-						Sign In
+						SEND
 					</button>
 
 					

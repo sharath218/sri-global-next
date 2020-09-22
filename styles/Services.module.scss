@@ -4,7 +4,6 @@
 	min-height: 80vh;
 	align-items: center;
 	width: 100%;
-	
 }
 
 .titlebox {
@@ -57,11 +56,12 @@
 	width: 9em;
 	height: 10em;
 	background-color: rgb(241, 240, 255);
-	
+	border-radius: 4px;
+
 	display: grid;
 	place-items: center;
 	overflow: hidden;
-	color: #272343;
+	
 	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	&:hover {
@@ -79,8 +79,8 @@
 			filter: blur(7px);
 			opacity: 0.3;
         }
-        border: 0.5px solid #272343;
-        box-shadow: 0 2px 59px  rgb(213, 222, 236);
+        border: 0.5px solid #847cb6;
+		box-shadow: 0 4px 17px 5px rgba(17, 16, 16, 0.35);
 	}
 }
 @-webkit-keyframes slide-top {

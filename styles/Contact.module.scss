@@ -43,15 +43,15 @@
 .submitbtn{
     width: 200px;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 400;
 	color: #fff;
 	cursor: pointer;
   margin: auto;
   margin-top: 1em;
-
+  letter-spacing: 2px;
 	height: 2em;
 	text-align: center;
-	border: none;
+	border: 1px solid #30dd8a;
 	background-size: 300% 100%;
 	border-radius: 50px;
 	background-image: linear-gradient(90deg, #25aae1, #40e495, #30dd8a, #2bb673);
